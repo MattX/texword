@@ -1,0 +1,47 @@
+\documentclass[12pt]{article}
+
+\usepackage[top=2.54cm,bottom=2.54cm,right=2.54cm,left=2.54cm]{geometry}
+
+\usepackage{fontspec}
+\usepackage{unicode-math}
+\setmainfont{Calibri}
+\setmathfont{Cambria Math}
+
+\pagenumbering{gobble}
+
+\usepackage{titlesec}
+\usepackage{kantlipsum}
+
+\usepackage[usenames,svgnames,table]{xcolor}
+\definecolor{seccolor}{HTML}{2F5496}
+
+\setlength{\parindent}{0pt}
+
+\titleformat*{\section}{\color{seccolor}\fontsize{16pt}{19pt}\selectfont}
+\titlespacing*{\section}
+{0pt}{12pt}{0pt}
+
+\titleformat*{\subsection}{\color{seccolor}\fontsize{13pt}{15.5pt}\selectfont}
+\titlespacing*{\subsection}
+{0pt}{2pt}{0pt}
+
+\begin{document}
+	
+	\raggedright
+	
+	\section*{Hi I'm a section header}
+	\kant[1-2]
+	
+	\subsection*{I'm a subsection}
+	\kant[2]
+	
+	\subsection*{Math!}
+	Inline math: $f(x) = \sum_{i=0}^k \frac{f^{(i)}(a)}{i!}(x-a)^i + o(x^k)$
+	
+	Block math:
+	
+	$$
+	f(x) = f(a) +f'(a)(x-a) + \frac{f''(a)}{2!}(x-a)^2 +\cdots+
+	\frac{f^{(k)}(a)}{k!}(x-a)^k +\int_a^x f^{(k+1)}(t)\frac{(x-t)^k}{k!}\,\mathrm{d}t.
+	$$
+\end{document}
