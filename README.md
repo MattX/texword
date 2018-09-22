@@ -13,7 +13,7 @@ The rendering is not pixel-perfect, since the layout engines have significant
 differences. But it's pretty good! See for yourself:
 
 - [Latex-rendered file](texword.pdf)
-- [MS Word-rendered file](word.pdf)
+- [MS Word-rendered file](reference.pdf)
 
 The source is in [texword.tex](texword.tex).
 
