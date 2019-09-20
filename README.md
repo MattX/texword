@@ -12,6 +12,8 @@ have Word installed or are running Windows. Otherwise, Google is your friend :)
 The rendering is not pixel-perfect, since the layout engines have significant
 differences. But it's pretty good! See for yourself:
 
+![Word on the left, Latex on the right.](comparison.png)
+
 - [Latex-rendered file](texword.pdf)
 - [MS Word-rendered file](reference.pdf)
 
